@@ -10,44 +10,86 @@
 
   </head>
   <body>
-    <h1>Hello world </h1>
 
     <main class="w-screen h-screen">
-      <div class="clicker bg-gray-500 ">
+      <div class="clicker  flex flex-col justify-center items-center">
 
+        <h1 class="text-4xl font-extrabold text-orange-400 align-top border-8 rounded-2xl">0 Basketballs</h1>
+        <br>
+        <br>
+        <br>
+          <button class=" cursor-pointer active:scale-110">
+            <img src="/src/images/basketball.png">
+          </button>
 
       </div>
-      <div class="players bg-blue-300 flex">
+
+      <div class="players  flex">
           <!-- <h3 class="font-extrabold italic p-2">Players</h3> -->
           <div class="card">
             <img src="/src/images/legoat.png" alt="Player Icon" class="avatar" />
             <div class="name">LEGoat-Evolved</div>
-            <button class="button">Unlock</button>
+            <button class="button cursor-pointer">Cost : 2000000</button>
+            <p class=" font-extrabold italic">Locked (Best multiplyer)</p>
           </div>
           <div class="card">
             <img src="/src/images/lebron.png" alt="Player Icon" class="avatar" />
             <div class="name">Lebron</div>
-            <button class="button">Unlock</button>
+            <button class="button cursor-pointer">Cost : 100</button>
+            <p class=" font-extrabold italic">Locked</p>
           </div>
           <div class="card">
             <img src="/src/images/Chef.png" alt="Player Icon" class="avatar" />
             <div class="name">Chef Curry</div>
-            <button class="button">Unlock</button>
+            <button class="button cursor-pointer">Cost : 100000</button>
+            <p class=" font-extrabold italic">Locked</p>
           </div>
           <div class="card">
             <img src="/src/images/KevinD.png" alt="Player Icon" class="avatar" />
             <div class="name">Grim Reaper</div>
-            <button class="button">Unlock</button>
+            <button class="button cursor-pointer">Cost : 100000</button>
+            <p class=" font-extrabold italic">Locked</p>
+          </div>
+          <div class="card">
+            <img src="/src/images/mj.png" alt="Player Icon" class="avatar" />
+            <div class="name">Prime MJ</div>
+            <button class="button cursor-pointer">Cost : 1000000</button>
+            <p class=" font-extrabold italic">Locked</p>
           </div>
       </div>
-      <div class="adam_silver_dialouge bg-indigo-400">
+      <div class="adam_silver_dialouge">
+        <div class="flex">
+          <div>
+        <h1 class="font-extrabold italic text-3xl"> Upgrade Store 🏀 </h1>
+        <br>
+        <br>
+        <button class=" button cursor-pointer">Dunk package ! (+100 clicks/s) </button>
+        <br>
+        <br>
+        <button class=" button cursor-pointer">GOAT Debate ! (+1000 clicks/s) </button>
+          <br>
+          <br>
+          <button class=" button cursor-pointer">Shifty package ! (+350 clicks/s) </button>
+          <br>
+          <br>
+          <button class=" button cursor-pointer">Evolved balls  ! (+1000 clicks/s) </button>
+        </div>
+        <div>
+          <p class="italic p-2 flex flex-col">Hint - To Get Evolved balls you must click the one in Charge.</p>
+          <button class=" cursor-pointer active:scale-110">
+            <img src="/src/images/adam.png" class="size-70 m-2">
+            Hey im Mr Silver i need to collect basketballs to Grow the League. Can you help? The more balls you have the better the players you can get to help.
 
-
+          </button>
+        
+        </div>
       </div>
+        </div>
 
     </main>
 
 
     <script type="module" src="/src/main.js"></script>
   </body>
+
 </html>

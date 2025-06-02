@@ -3,6 +3,8 @@
 
 
 main {  
+  background-image: url('/src//images/image\ copy.png'); 
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1.7fr 0.7fr 1fr;
@@ -19,13 +21,14 @@ main {
 
 .adam_silver_dialouge { grid-area: adam_silver_dialouge; }
 
-.clicker { grid-area: clicker; }
+.clicker { grid-area: clicker; background-image: url('/src//images/background-court.png'); 
+  background-size: cover; }
 
 
 
 
 .card {
-  height: 260px;
+  height: 330px;
   width: 150px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
