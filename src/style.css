@@ -21,7 +21,7 @@ main {
 
 .adam_silver_dialouge { grid-area: adam_silver_dialouge; }
 
-.clicker { grid-area: clicker; background-image: url('/src//images/background-court.png'); 
+.clicker { grid-area: clicker; background-image: url('/src//images/image.png'); 
   background-size: cover; }
 
 
@@ -58,7 +58,7 @@ main {
 
 .button {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: orangered; 
   color: white;
   border: none;
   border-radius: 8px;
