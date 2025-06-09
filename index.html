@@ -12,7 +12,7 @@
     <main class="w-screen h-screen">
       <div class="clicker flex flex-col justify-center items-center">
         <h1
-          class="text-4xl font-extrabold text-orange-400 align-top border-8 rounded-2xl p-3"
+          class="text-4xl font-extrabold text-orange-400 align-top border-8 rounded-2xl p-3" id="basketballs"
         >
           0 Basketballs
         </h1>
@@ -25,7 +25,7 @@
         <br />
         <br />
         <br />
-        <button onClick="addPoint()" class="cursor-pointer active:scale-110">
+        <button onClick="bigClick()" class="cursor-pointer active:scale-110">
           <img src="/src/images/basketball.png" />
         </button>
       </div>
@@ -33,75 +33,81 @@
         <!-- <h3 class="font-extrabold italic p-2">Players</h3> -->
         <div class="card">
           <img src="/src/images/legoat.png" alt="Player Icon" class="avatar" />
-          <div class="name">LEGoat-Evolved</div>
-          <button class="button cursor-pointer">Cost : 2000000</button>
-          <p class="font-extrabold italic">Locked (Best multiplyer)</p>
+          <div  class="name">LEGoat-Evolved</div>
+          <button onClick="buygoat()" class="button cursor-pointer">Cost 5000000000</button>
+          <p class="font-extrabold italic" id="legoatlock">Locked (Best multiplyer)</p>
         </div>
         <div class="card">
           <img src="/src/images/lebron.png" alt="Player Icon" class="avatar" />
           <div class="name">Lebron</div>
-          <button class="button cursor-pointer">Cost : 100</button>
-          <p class="font-extrabold italic">Locked</p>
+          <button onClick="buyLebron()" class="button cursor-pointer">Cost : 100</button>
+          <p class="font-extrabold italic " id="Locked">Locked</p>
         </div>
         <div class="card">
           <img src="/src/images/Chef.png" alt="Player Icon" class="avatar" />
           <div class="name">Chef Curry</div>
-          <button class="button cursor-pointer">Cost : 100000</button>
-          <p class="font-extrabold italic">Locked</p>
+          <button onClick="buychef()" class="button cursor-pointer">Cost : 10000</button>
+          <p class="font-extrabold italic" id="currylock">Locked</p>
         </div>
         <div class="card">
           <img src="/src/images/KevinD.png" alt="Player Icon" class="avatar" />
           <div class="name">Grim Reaper</div>
-          <button class="button cursor-pointer">Cost : 100000</button>
-          <p class="font-extrabold italic">Locked</p>
+          <button  onClick="buykd()" class="button cursor-pointer">Cost : 10000</button>
+          <p class="font-extrabold italic" id="kdlock">Locked</p>
         </div>
         <div class="card">
           <img src="/src/images/mj.png" alt="Player Icon" class="avatar" />
           <div class="name">Prime MJ</div>
-          <button class="button cursor-pointer">Cost : 1000000</button>
-          <p class="font-extrabold italic">Locked</p>
+          <button onClick="buymj()" class="button cursor-pointer">Cost : 10000000</button>
+          <p class="font-extrabold italic" id="mjlock">Locked</p>
         </div>
       </div>
       <div class="adam_silver_dialouge">
         <div class="flex">
           <div>
             <h1 class="font-extrabold italic text-3xl">Upgrade Store 🏀</h1>
-            <br />
-            <br />
-            <button class="button cursor-pointer">
+            <h1
+          class="text-2xl font-extrabold text-violet-600 align-top rounded-2xl " id="Evoballs"
+        >
+          0 Evo balls
+        </h1> 
+            <button  onClick="buydunk()" class="button cursor-pointer">
               Dunk package ! (+100 clicks/s)
+              cost : 50 Evoballs
             </button>
             <br />
             <br />
-            <button class="button cursor-pointer">
+            <button onClick="buydebate()" class="button cursor-pointer">
               GOAT Debate ! (+1000 clicks/s)
+              cost : 1000 Evoballs
             </button>
             <br />
             <br />
-            <button class="button cursor-pointer">
+            <button onClick="buyshift()" class="button cursor-pointer">
               Shifty package ! (+350 clicks/s)
+              cost : 100 Evoballs
             </button>
             <br />
             <br />
-            <button class="button cursor-pointer">
-              Evolved balls ! (+1000 clicks/s)
-            </button>
           </div>
           <div>
             <p class="italic p-2 flex flex-col">
               Hint - To Get Evolved balls you must click the one in Charge.
             </p>
-            <button class="cursor-pointer active:scale-110">
-              <img src="/src/images/adam.png" class="size-70 m-2" />
-              Hey im Mr Silver i need to collect basketballs to Grow the League.
-              Can you help? The more balls you have the better the players you
-              can get to help.
+            <button onclick="changeevo(1)" class="cursor-pointer active:scale-110">
+              <img src="/src/images/adam.png" class="size-70 ml-60" />
             </button>
+              <p class="p-6">
+             " Hey im Mr Silver, i need to collect basketballs to Grow the League.
+              Can you help? The more balls you have the better the players you
+              can get to help!!"
+            </p>
+            
           </div>
         </div>
       </div>
     </main>
 
-    <script type="module" src="/src/main.js"></script>
+    <script src="/src/main.js"></script>
   </body>
 </html>

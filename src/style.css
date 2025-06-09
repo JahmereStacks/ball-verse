@@ -67,5 +67,24 @@ main {
 }
 
 .button:hover {
-  background-color: #45a049;
+  background-color: black;
+}
+
+.clicker {
+  position: relative;
+  grid-area: clicker;
+  background-image: url('/src//images/image.png');
+  background-size: cover;
+}
+
+.clicker::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  width: 7px;
+ 
 }
